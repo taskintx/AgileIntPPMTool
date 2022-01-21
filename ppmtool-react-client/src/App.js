@@ -9,13 +9,13 @@ import AddProject from "./components/Project/AddProject";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Router>
+      <Router>
+        <div className="App">
           <Header />
-          <Route exact path="/dashboard" component={Dashboard}></Route>
-          <Route exact path="/addProject" component={AddProject}></Route>
-        </Router>
-      </div>
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/addProject" component={AddProject} />
+        </div>
+      </Router>
     );
   }
 }
